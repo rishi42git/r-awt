@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="FormController">
+  <h2>Registration Form</h2>
+  
+  <p>Hello, {{user.name}}!</p>
+
+  <form name="myForm" ng-submit="submitForm()" novalidate>
+    <input type="text" ng-model="user.name" placeholder="Enter your name" required><br><br>
+    
+    <input type="email" ng-model="user.email" placeholder="Enter your email" required><br><br>
+    
+    <button type="submit" ng-disabled="myForm.$invalid">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin-inline:10%;
+    padding:4em;
+    
+}
+a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: aqua;
+    font-size: 1.2em;
+}
