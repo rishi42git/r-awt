@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myhub">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        #hubtitle {
+          text-align: center;
+        }
+    </style>
+</head>
+<body ng-controller="hubController">
+    <h1 id="hubtitle">ADVANCE WEB TECH FILE HUB</h1>
+    
+    <ul>
+        <li ng-repeat="link in links">
+            <a ng-href="{{link.source}}" target="_blank">{{link.title}}</a>
+        </li>
+    </ul>
+
+    <script>
+        var app = angular.module("myhub", []);
+        app.controller("hubController", function($scope) {
+            $scope.links = [
+                {
+                    "title": "YOUTUBE",
+                    "source": "https://m.youtube.com"
+                }
+            ];
+        });
+    </script>
+</body>
+</html>
