@@ -1,0 +1,4 @@
+.error { color: red; font-size: 14px; }
+input.ng-invalid.ng-touched { border: 2px solid red; }
+input.ng-valid.ng-touched { border: 2px solid green; }
+.success { color: green; margin-top: 10px; }
