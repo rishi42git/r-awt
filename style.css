@@ -1,19 +1,82 @@
-body{
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+/* ====== GLOBAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-section{
-    margin-inline:10%;
-    padding:4em;
-    
+
+/* ====== BODY ====== */
+body {
+  background-color: #0d1117; /* Deep dark background */
+  color: #e6edf3;            /* Soft white text */
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4em;
 }
-a{
-    display: block;
-    cursor: pointer;
-    text-decoration: none;
-    color: aqua;
-    font-size: 1.2em;
-}  
+
+/* ====== HEADERS ====== */
+h1 {
+  color: #58a6ff;            /* Calm blue highlight */
+  font-size: 2.5em;
+  margin: 1.2em 0 0.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #c9d1d9;
+  margin: 1em 0 0.5em;
+  text-transform: capitalize;
+  border-left: 4px solid #58a6ff;
+  padding-left: 10px;
+}
+
+/* ====== SECTIONS ====== */
+section {
+  background-color: #161b22; /* Slightly lighter dark */
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 2em;
+  margin: 2em auto;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== LINKS ====== */
+a {
+  display: inline-block;
+  color: #79c0ff;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 1.1em;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #238636; /* Subtle green hover */
+  transform: translateX(4px);
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 600px) {
+  section {
+    width: 90%;
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  a {
+    font-size: 1em;
+  }
+}

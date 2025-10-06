@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AWT Lab — To-Do (Session)</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;padding:28px}
+    .wrap{max-width:760px;margin:0 auto}
+    h1{color:#58a6ff}
+    .top{display:flex;gap:12px;align-items:center}
+    input[type="text"]{flex:1;padding:10px;border-radius:6px;border:1px solid #222;background:#0f1720;color:#e6edf3}
+    button{padding:10px;border-radius:6px;border:none;background:#238636;color:#fff;cursor:pointer}
+    ul{list-style:none;padding:0;margin-top:12px}
+    li{padding:10px;border-radius:8px;margin-top:8px;background:#101418;display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(255,255,255,0.03)}
+    .meta{color:#9aa4ad;font-size:0.9rem}
+    .actions button{margin-left:8px;background:#2ea44f;padding:8px;border-radius:6px}
+    .logout{background:#b91c1c}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h1>Session To-Do (Exercise 2)</h1>
+      <div>
+        <span id="userName" class="meta">-</span>
+        <button id="btnLogout" class="logout" style="margin-left:12px">Logout</button>
+      </div>
+    </div>
+
+    <div style="margin-top:12px" class="top">
+      <input id="newTodo" type="text" placeholder="Add a new to-do..." />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="todoList"></ul>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

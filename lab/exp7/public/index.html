@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>State Management Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>State Management Lab</h1>
+
+    <section class="card">
+      <h2>Storage Mode</h2>
+      <div class="modes">
+        <label><input type="radio" name="mode" value="local" /> Local Storage</label>
+        <label><input type="radio" name="mode" value="session" /> Session Storage</label>
+        <label><input type="radio" name="mode" value="server" /> Server Session</label>
+      </div>
+      <p class="hint">Selected mode persists state as described (localStorage, sessionStorage, or server session).</p>
+    </section>
+
+    <section class="card">
+      <h2>Counter</h2>
+      <div class="counter-row">
+        <button id="dec">−</button>
+        <div id="count" class="count">0</div>
+        <button id="inc">+</button>
+      </div>
+      <div class="controls">
+        <button id="reset">Reset</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Theme</h2>
+      <label><input type="radio" name="theme" value="dark" /> Dark</label>
+      <label><input type="radio" name="theme" value="light" /> Light</label>
+    </section>
+
+    <section class="card status">
+      <h2>Status</h2>
+      <p>Storage: <strong id="status-mode">-</strong></p>
+      <p>Last updated: <span id="status-ts">-</span></p>
+      <p>Notes: <span id="status-notes">Open this page via http://localhost:3000 for server mode to work.</span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
